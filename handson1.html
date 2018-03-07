@@ -1,0 +1,37 @@
+<!-- Hands-On 1
+Now that you have learned about Bootstrap, its now time to put that knowledge to work. In this Hands-On exercise, you will create a project which will solidify how these pieces operate when used together. Hands-On projects are completed outside of the browser, using your IDE (i.e., VSCode).
+
+Requirements
+Leverage your knowledge of Bootstrap to create a form that has the following input fields:
+
+First Name
+Last Name
+Phone Number
+Email
+"Preferred Contact Time" with AM and PM checkboxes. -->
+<html>
+    <head>
+        <title>Hands-On 1 for Lesson 9</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="handson1.css">
+    </head>
+    <body>
+        <label>First Name</label>
+        <input type="text" class="form-control-inline"><br>
+        <label>Last Name</label>
+        <input type="text" class="form-control-inline"><br>
+        <label>Phone Number</label>
+        <input type="text" class="form-control-inline"><br>
+        <label>Email</label>
+        <input type="email" class="form-control-inline" id="email" aria-describedby="emailHelp"><br>
+        <label>Preferred Contact Time</label>
+        <input type="text" class="form-control-inline">
+            <div>
+                <input class="form-check-input" type="checkbox" value="" id="checkAM">
+                <label class="AM" name="AMorPM" for="AM">AM</label>
+                <input class="form-check-input" type="checkbox" value="" id="checkPM">
+                <label class="PM" name="AMorPM" for="PM">PM</label>   
+            </div>    
+    </body>
+</html>
